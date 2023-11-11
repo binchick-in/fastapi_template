@@ -23,4 +23,4 @@ dev:
 
 .PHONY: test
 test:
-	venv/bin/pytest
+	pytest
