@@ -20,3 +20,7 @@ run: build
 .PHONY: dev
 dev:
 	venv/bin/uvicorn fastapi_template:app --reload --host 0.0.0.0
+
+.PHONY: test
+test:
+	venv/bin/pytest
