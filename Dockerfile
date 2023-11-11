@@ -12,4 +12,4 @@ ADD . /code
 WORKDIR /code
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 EXPOSE 8888
-CMD ["uvicorn", "app:app", "--port", "8888", "--host", "0.0.0.0"]
+CMD ["uvicorn", "fastapi_template:app", "--port", "8888", "--host", "0.0.0.0"]

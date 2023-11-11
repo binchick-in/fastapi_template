@@ -19,4 +19,4 @@ run: build
 
 .PHONY: dev
 dev:
-	venv/bin/uvicorn app:app --reload --host 0.0.0.0
+	venv/bin/uvicorn fastapi_template:app --reload --host 0.0.0.0
