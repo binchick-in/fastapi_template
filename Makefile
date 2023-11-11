@@ -16,3 +16,7 @@ run-dev: build
 .PHONY: run
 run: build
 	docker run -d -p 8888:8888 --name $(DOCKER_IMAGE_NAME) $(DOCKER_IMAGE_NAME):latest
+
+.PHONY: dev
+dev:
+	venv/bin/uvicorn app:app --reload --host 0.0.0.0
